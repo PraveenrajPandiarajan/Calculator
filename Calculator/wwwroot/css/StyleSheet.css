@@ -1,0 +1,29 @@
+﻿body {
+   background-color:cadetblue;
+   font-size: 20px;
+}
+h1{
+    font-size:40px;
+    text-align:center;
+}
+
+button{
+    
+    height:70px;
+    width:70px;
+}
+.text{
+    width:298px;
+    height: 70px;
+}
+.clear {
+    height:70px;
+    width:145px;
+}
+.clears {
+    height: 70px;
+    width: 145px;
+}
+.clacy{
+    margin:auto;
+}

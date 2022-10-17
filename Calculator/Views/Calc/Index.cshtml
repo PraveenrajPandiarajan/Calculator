@@ -1,0 +1,56 @@
+﻿@model Calculator.Models.Prop
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> </script>
+    
+ </head>
+<body>
+
+
+
+<form name="form1">
+        <div class="Clacy">
+   
+@using (Html.BeginForm("Index,Calc"))
+{
+    <center>
+    <h1>My Calculator</h1>
+       
+       <br>
+                @Html.TextBoxFor(model=>model.tot,new{id="tot", name="calculate" ,style="width:298px; height: 70px;" })
+                <br>
+        <button type="button" id="1" value="1" onclick="addTextToInput('1')">1</button>
+        <button type="button" id="2" value="2" onclick="addTextToInput('2')">2</button>
+        <button type="button" id="3" value="3" onclick="addTextToInput('3')">3</button>
+        <button type="button" id="3" value="divide" name="cal" onclick="addTextToInput('/')">/</button>
+        <br>
+        <button type="button" id="1" value="4" onclick="addTextToInput('4')">4</button>
+        <button type="button" id="2" value="5" onclick="addTextToInput('5')">5</button>
+        <button type="button" id="3" value="6" onclick="addTextToInput('6')">6</button>
+        <button type="button" id="3" value="*" name="calcu" onclick="addTextToInput('*')">*</button>
+        <br>
+        <button type="button" id="1" value="7" onclick="addTextToInput('7')">7</button>
+        <button type="button" id="2" value="8" onclick="addTextToInput('8')">8</button>
+        <button type="button" id="3" value="9" onclick="addTextToInput('9')">9</button>
+        <button type="button" id="3" value="-" onclick="addTextToInput('-')">-</button>
+        <br>
+       <button type="button" id="1" value="0" onclick="addTextToInput('0')">0</button>
+       <button type="button" id="2" value="." onclick="addTextToInput('.')">.</button>
+       <button type="button" id="3" value="+" onclick="addTextToInput('+')">+</button>
+       <button type="button" id="3" value="null" name="calculate" onclick="equal()">=</button>
+          <br>
+        <button class="clear" type="button" id="2" value="cl" onclick="form1.tot.value = form1.tot.value.substr(0,form1.tot.value.length-1)">CE</button>        
+        <button class="clears" type="button" id="3" value="c" onclick="clr()">CLEAR</button>
+        </center>
+                }
+</div>
+        </form>
+        </body>
+        </html>
